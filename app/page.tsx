@@ -15,8 +15,8 @@ export default function HomeTable() {
       try {
         const data: User[] = await getUser();
         setUsers(data);
+        message.success("Users fetched successfully!");
       } catch (error) {
-        console.error("Failed to fetch users:", error);
         message.error("Failed to fetch users. Please try again later.");
       } finally {
         setLoading(false);
