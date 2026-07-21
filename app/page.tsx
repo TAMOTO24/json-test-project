@@ -31,7 +31,7 @@ export default function HomeTable() {
       title: "ID",
       dataIndex: "id",
       key: "id",
-      width: 60,
+      width: 30,
     },
     {
       title: "Name",
@@ -85,7 +85,6 @@ export default function HomeTable() {
         columns={columns}
         dataSource={users}
         loading={loading}
-        scroll={{ x: 1000 }}
         pagination={{
           pageSize: 5,
           showSizeChanger: false,
